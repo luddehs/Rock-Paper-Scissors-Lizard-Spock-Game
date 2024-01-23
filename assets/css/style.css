@@ -25,3 +25,44 @@ body {
     padding: 1%;
 }
 
+.scores {
+    display: inline-block;
+    padding: 10px;
+}
+
+@media (max-width: 414px) {
+    /* Add button, winner/loser message*/
+    
+    .controls-area {
+        width: 100%;
+    }
+
+    .score-area {
+        width: 100%;
+    }
+
+    .scores {
+        margin: 0.5em auto;
+        display: block;
+        padding: 5px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    /* Add button, winner/loser message*/
+
+    .game-area {
+        height: 70vh;
+    }
+
+    .controls-area {
+        width: 75%;
+        margin: 10px auto;
+    }
+}
+
+
