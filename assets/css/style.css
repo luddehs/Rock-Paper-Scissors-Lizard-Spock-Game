@@ -37,6 +37,11 @@ body {
         width: 100%;
     }
 
+    .winner-loser {
+        padding: 10% 0;
+        width: 100%;
+    }
+
     .score-area {
         width: 100%;
     }
@@ -62,6 +67,11 @@ body {
     .controls-area {
         width: 75%;
         margin: 10px auto;
+    }
+
+    .winner-loser {
+        padding: 10% 0;
+    
     }
 }
 
