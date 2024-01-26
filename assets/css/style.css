@@ -1,5 +1,10 @@
 /* Global style */
 
+html {
+    min-height: 100%;
+    position: relative;
+}
+
 body {
     /* Add colors */
     font-family: "Cabin Sketch", sans-serif ;
@@ -11,7 +16,12 @@ body {
 .heading {
     text-align: center;
     font-size: 3rem;
-    background-color: lightblue;
+    padding-top: 10px;
+    background-color: lightskyblue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    
 }
 /* Add Logo */
 
@@ -20,8 +30,7 @@ body {
 .rules {
     box-sizing: border-box;
     background-color: lightcoral;
-    max-height: 450px;
-    max-width: 750px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding: 1%; 
@@ -33,21 +42,26 @@ body {
 
 .game-area {
     box-sizing: border-box;
-    /* Add measurement */
     background-color: lightgreen;
-    max-height: 450px;
-    max-width: 750px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+}
+
+.controls-area {
+    box-sizing: border-box;
+    background-color: lightgrey;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 
 .card-area {
     box-sizing: border-box;
     background-color: lightsalmon;
-    max-height: 450px;
-    max-width: 750px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding: 1%
@@ -62,8 +76,7 @@ body {
 .score-area {
     box-sizing: border-box;
     background-color: lightgoldenrodyellow;
-    max-height: 450px;
-    max-width: 750px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding: 1%
@@ -84,6 +97,7 @@ body {
     margin: 10px 10px;
     border-radius: 18%;
     border: 3px solid;
+    transition: all 0.5s;
 }
 
 .icon-btn {
@@ -96,11 +110,28 @@ body {
 } 
 
 
-@media (max-width: 414px) {
-    /* Add button, winner/loser message*/
-    
-    .controls-area {
-        width: 100%;
+/* Media queries */
+
+@media (max-width: 800px) {
+    .btn {
+        margin: 8px 8px;
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media (max-width: 400px) {
+
+
+    .btn {
+        margin: 6px 6px;
+        border: 2px solid;
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon-btn {
+        font-size: x-large;
     }
 
     .winner-loser {
