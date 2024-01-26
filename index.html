@@ -18,6 +18,11 @@
          <!-- Add logo -->
     </h1>
     
+    <div class="rules">
+        <!-- Add instructions and toggle function -->
+        <h3><i class="fa-solid fa-circle-plus"></i></i> How to play</h3>
+    </div>
+    
     <section class="game-area"></section>
         <div>
             <h2>Make a choice!</h2>
@@ -40,17 +45,33 @@
                 </button>
             </div>
         </div>
-        <div class="score-area">
-                <h2 class="scores">Your score: <span id="player-score"></span>0</span></h2>
-                <!-- Add graphics --> 
-                <h2 class="scores">Computer score: <span id="computer-score"></span>0</span></h2>
-                <!-- Add graphics -->
-        </div>
-        <!-- Show winner/loser of each turn -->
-        <div id="winner-loser">
-            <p>The winner/loser is!</p>
-        </div>
     </section>
+
+    <!-- Placeholder -->
+    <div id="winner-loser">
+        <p>The winner/loser is!</p>
+    </div>
+
+    <div class="card-area">
+        <div class="card player-card">
+            <!-- Placeholder --> 
+            <p>PLAYER</p>
+        </div>
+        <div class="card computer-card">
+            <!-- Placeholder --> 
+            <p>COMPUTER</p>
+        </div>
+    </div>
+
+    <div class="score-area">
+        <h2 class="scores">Your score: <span id="player-score"></span>0</span></h2> 
+        <h2 class="scores">Computer score: <span id="computer-score"></span>0</span></h2>
+    </div>
+    <div class="reset">
+        <!-- Add reset function -->
+        <i class="fa-solid fa-bomb"></i>
+    </div>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
