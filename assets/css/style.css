@@ -37,6 +37,14 @@ body {
     
 }
 
+.rules-list {
+    list-style-type: none;
+}
+
+li {
+    margin: 5px;
+}
+
 
 /* Game layout */
 
