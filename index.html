@@ -23,36 +23,35 @@
         <h3><i class="fa-solid fa-circle-plus"></i></i> How to play</h3>
     </div>
     
-    <section class="game-area"></section>
+    <section class="game-area">
         <div>
             <h2>Make a choice!</h2>
             <!-- Add buttons -->
             <div class="controls-area">
-                <button data-type="rock" class="btn rockBtn">
-                    <i class="fa-solid fa-hand-back-fist"></i>
+                <button data-type="rock" class="btn rock-btn">
+                    <i class="icon-btn fa-solid fa-hand-back-fist"></i>
                 </button>
-                <button data-type="paper" class="btn paperBtn">
-                    <i class="fa-solid fa-hand"></i>
+                <button data-type="paper" class="btn paper-btn">
+                    <i class="icon-btn fa-solid fa-hand"></i>
                 </button>
-                <button data-type="scissors" class="btn scissorsBtn">
-                    <i class="fa-solid fa-hand-scissors"></i>
+                <button data-type="scissors" class="btn scissors-btn">
+                    <i class="icon-btn fa-solid fa-hand-scissors"></i>
                 </button>
-                <button data-type="lizard" class="btn lizardBtn">
-                    <i class="fa-solid fa-hand-lizard"></i>
+                <button data-type="lizard" class="btn lizard-btn">
+                    <i class="icon-btn fa-solid fa-hand-lizard"></i>
                 </button>
-                <button data-type="spock" class="btn spockBtn">
-                    <i class="fa-solid fa-hand-spock"></i>
+                <button data-type="spock" class="btn spock-btn">
+                    <i class="icon-btn fa-solid fa-hand-spock"></i>
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- Placeholder -->
-    <div id="winner-loser">
-        <p>The winner/loser is!</p>
-    </div>
-
     <div class="card-area">
+        <div id="winner-loser">
+            <!-- Placeholder -->
+            <p>The winner/loser is!</p>
+        </div>
         <div class="card player-card">
             <!-- Placeholder --> 
             <p>PLAYER</p>
@@ -64,12 +63,14 @@
     </div>
 
     <div class="score-area">
-        <h2 class="scores">Your score: <span id="player-score"></span>0</span></h2> 
-        <h2 class="scores">Computer score: <span id="computer-score"></span>0</span></h2>
-    </div>
-    <div class="reset">
-        <!-- Add reset function -->
-        <i class="fa-solid fa-bomb"></i>
+        <div>
+            <h2 class="scores">Your score: <span id="player-score"></span>0</span></h2> 
+            <h2 class="scores">Computer score: <span id="computer-score"></span>0</span></h2>
+        </div>
+        <div class="reset">
+            <!-- Add reset function -->
+            <i class="fa-solid fa-bomb"></i>
+        </div>
     </div>
 
     <script src="assets/js/script.js"></script>

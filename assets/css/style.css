@@ -11,8 +11,15 @@ body {
 .heading {
     text-align: center;
     font-size: 3rem;
+    background-color: lightblue;
 }
 /* Add Logo */
+
+/* Rules */
+
+.rules {
+    background-color: lightcoral;
+}
 
 
 /* Game layout */
@@ -20,9 +27,16 @@ body {
 .game-area {
     box-sizing: border-box;
     /* Add measurement */
+    background-color: lightgreen;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+}
+
+
+
+.card-area {
+    background-color: lightsalmon;
 }
 
 .card {
@@ -30,10 +44,36 @@ body {
     padding: 10px;
 }
 
+.score-area {
+    background-color: lightgoldenrodyellow;
+}
+
 .scores {
     display: inline-block;
     padding: 10px;
 }
+
+
+/* Buttons */
+
+.btn {
+    height: 85px;
+    width: 85px;
+    background-color: white;
+    margin: 10px 10px;
+    border-radius: 18%;
+    border: 3px solid;
+}
+
+.icon-btn {
+    font-size: xx-large;
+}
+
+.btn:active, .btn:hover {
+    background-color: black;
+    color: white;
+} 
+
 
 @media (max-width: 414px) {
     /* Add button, winner/loser message*/
