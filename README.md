@@ -76,12 +76,13 @@ Table of Contents
 
 <details>
     <summary>Desktop Wireframe</summary>
-    ![Desktop Wireframe](docs/wireframes/P2-Web-1.png, P2-Web-2.png)
+    ![Desktop Wireframe 1](docs/wireframes/P2-Web-1.png)
+    ![Desktop Wireframe 2](docs/wireframes/P2-Web-2.png)
 </details>
 
 <details>
     <summary>Mobile Wireframe</summary>
-    ![Mobile Wireframe](docs/wireframes/P2-Phone-1)
+    ![Mobile Wireframe](docs/wireframes/P2-Phone-1.png)
 </details>
 
 ## Features
