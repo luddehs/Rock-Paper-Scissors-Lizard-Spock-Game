@@ -17,7 +17,6 @@ body {
     text-align: center;
     font-size: 3rem;
     padding-top: 10px;
-    background-color: lightskyblue;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -29,7 +28,6 @@ body {
 
 .rules {
     box-sizing: border-box;
-    background-color: lightcoral;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -50,7 +48,6 @@ li {
 
 .game-area {
     box-sizing: border-box;
-    background-color: lightgreen;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -59,7 +56,6 @@ li {
 
 .controls-area {
     box-sizing: border-box;
-    background-color: lightgrey;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -68,7 +64,7 @@ li {
 
 .card-area {
     box-sizing: border-box;
-    background-color: lightsalmon;
+    
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -76,14 +72,13 @@ li {
 }
 
 .card {
-    background-color: lightcyan;
+
     display: inline-block;
-    padding: 100px;
+    
 }
 
 .score-area {
     box-sizing: border-box;
-    background-color: lightgoldenrodyellow;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -110,6 +105,10 @@ li {
 
 .icon-btn {
     font-size: xx-large;
+}
+
+.fa-hand-back-fist {
+    transform: rotate(90deg);
 }
 
 .btn:active, .btn:hover {
