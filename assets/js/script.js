@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Listen for clicked button
         button.addEventListener("click", function() {
             // Alert displaying game type
-            let gameType = this.getAttribute("data-type");
+            let gameType = this.getAttribute("aria-label");
                 alert(`You clicked ${gameType}`);
       });
     }        
