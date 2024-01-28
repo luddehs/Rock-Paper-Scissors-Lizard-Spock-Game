@@ -28,20 +28,30 @@ body {
 
 .rules {
     box-sizing: border-box;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+    background-color: lightgreen;
+}
+
+.rules-toggle {
+    background-color: lightseagreen;
+    display: inline-block;
     
 }
 
-.rules-list {
+#rules-list {
     list-style-type: none;
+    padding-right: 50px;
 }
 
 li {
-    margin: 5px;
+    margin: 6px;
+    background-color: beige;
+    width: 100%;
 }
+
 
 
 /* Game layout */
