@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+// Main function accepts datachoice value of buttons
 
 function runGame(playerChoice) {
 
