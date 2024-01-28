@@ -19,14 +19,18 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let button of buttons) {
         // Listen for clicked button
         button.addEventListener("click", function() {
-            // Alert displaying game type
-            let gameType = this.getAttribute("aria-label");
-                alert(`You clicked ${gameType}`);
+            // Call main game function
+            let playerChoice = this.getAttribute("data-choice");
+                runGame(playerChoice);
       });
     }        
+
+    // Add default game view when loading the DOM
+
 });
 
-function runGame() {
+
+function runGame(playerChoice) {
 
 } 
 
