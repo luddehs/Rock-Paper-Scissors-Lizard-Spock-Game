@@ -1,3 +1,13 @@
+
+const choices = ["rock", "paper", "scissors", "lizard", "spock"];
+const buttons = document.getElementsByClassName("btn");
+const playerScore = document.getElementById("player-score");
+const computerScore = document.getElementById("computer-score");
+const winnerLoser = document.getElementById("winner-loser");
+const playerCard = document.getElementById("player-card");
+const defaultCard = document.getElementById("default-card");
+const computerCard = document.getElementById("computer-card");
+
 // Load the DOM before running the game
 // Get the button elements and attach event listeners to them
 
