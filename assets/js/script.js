@@ -55,7 +55,7 @@ function runGame(playerChoice) {
     computerCard.src = `assets/images/icons/${choices[computerChoice]}.png`;
     computerCard.alt = choices[computerChoice];
 
-    //Check winner and update scores
+    // Check winner
     let result = checkWinner(choices[computerChoice], choices[playerChoice]);
     
     updateScores(result);
@@ -84,6 +84,21 @@ function checkWinner(playerChoice, computerChoice) {
     }
   }
 
+// Update scores based on result
+function updateScores(result) {
+
+    if (result === 'player') {
+
+      winnerLoser.textContent = 'Player wins/Computer lose';
+
+    } else if (result === 'computer') {
+      winnerLoser.textContent = 'Player lose/Computer wins';
+      
+    } else {
+      winnerLoser.textContent = "It's a tie!";
+    }
+  }
+  
 function incrementPlayerScore() {
 
 }
