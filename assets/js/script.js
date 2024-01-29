@@ -84,7 +84,7 @@ function checkWinner(playerChoice, computerChoice) {
     }
   }
 
-// Update scores based on result
+// Update result to winnner/loser/tie message
 function updateScores(result) {
 
     if (result === 'player') {
@@ -98,16 +98,44 @@ function updateScores(result) {
       winnerLoser.textContent = "It's a tie!";
     }
   }
+ 
+
+// Return message describing choice relationship and outcome
+function getComputerReaction(choice1, choice2) {
+    
+    const rules = {
+        rock: {
+        scissors: "Rock crushes Scissors",
+        lizard: "Rock crushes Lizard",
+      },
+      paper: {
+        rock: "Paper covers Rock",
+        spock: "Paper disproves Spock",
+      },
+      scissors: {
+        paper: "Scissors cuts Paper",
+        lizard: "Scissors decapitates Lizard",
+      },
+      lizard: {
+        spock: "Lizard poisons Spock",
+        paper: "Lizard eats Paper",
+      },
+      spock: {
+        scissors: "Spock smashes Scissors",
+        rock: "Spock vaporizes Rock",
+      },
+    };
   
+    return rules[choice1][choice2] || "";
+  }
+  
+
+
 function incrementPlayerScore() {
 
 }
 
 function incrementComputerScore() {
-
-}
-
-function computerReaction() {
 
 }
 
