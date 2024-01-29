@@ -55,9 +55,19 @@ function runGame(playerChoice) {
     computerCard.src = `assets/images/icons/${choices[computerChoice]}.png`;
     computerCard.alt = choices[computerChoice];
 
+    //Check winner and update scores
+    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
+    
+    updateScores(result);
+
 } 
 
 function compareChoices() {
+
+
+
+
+
 
 }
 
