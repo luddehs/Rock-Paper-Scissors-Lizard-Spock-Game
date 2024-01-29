@@ -40,6 +40,12 @@ body {
     
 }
 
+
+.hidden{
+    display: none !important;
+}
+
+
 #rules-list {
     list-style-type: none;
     padding-right: 50px;
@@ -99,7 +105,7 @@ li {
 img {
     width: 100%;
     height: auto;
-  }
+}
 
 .score-area {
     box-sizing: border-box;
