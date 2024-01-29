@@ -33,6 +33,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function runGame(playerChoice) {
 
+    // Change player card to corresponding image 
+    playerCard.src = `assets/images/icons${choices[playerChoice]}.png`;
+    playerCard.alt = choices[playerChoice];
+
+    // Generate random number for computer choice
+    let computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+    // Change computer card to corresponding image
+    computerCard.src = `assets/images/icons${choices[computerChoice]}.png`;
+    computerCard.alt = choices[computerChoice];
+
 } 
 
 function compareChoices() {
