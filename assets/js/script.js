@@ -62,14 +62,27 @@ function runGame(playerChoice) {
 
 } 
 
-function compareChoices() {
+// Compare choices and determine the winner
+function checkWinner(playerChoice, computerChoice) {
 
+    if (playerChoice === computerChoice) {
+      return 'tie';
 
+    } else if (
+      (playerChoice === 'rock' && (computerChoice === 'scissors' || computerChoice === 'lizard')) ||
+      (playerChoice === 'paper' && (computerChoice === 'rock' || computerChoice === 'spock')) ||
+      (playerChoice === 'scissors' && (computerChoice === 'paper' || computerChoice === 'lizard')) ||
+      (playerChoice === 'lizard' && (computerChoice === 'spock' || computerChoice === 'paper')) ||
+      (playerChoice === 'spock' && (computerChoice === 'scissors' || computerChoice === 'rock'))
+    ) {
 
+      return 'player';
 
-
-
-}
+    } else {
+        
+      return 'computer';
+    }
+  }
 
 function incrementPlayerScore() {
 
