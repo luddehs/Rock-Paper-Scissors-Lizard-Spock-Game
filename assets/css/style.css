@@ -31,8 +31,6 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 1%;
-
 }
 
 .rules-toggle {
@@ -41,10 +39,10 @@ body {
 }
 
 
+
 .hidden{
     display: none !important;
 }
-
 
 #rules-list {
     list-style-type: none;
@@ -52,11 +50,9 @@ body {
 }
 
 li {
-    margin: 6px;
+    margin: 5px;
     width: 100%;
 }
-
-
 
 /* Game layout */
 
@@ -128,13 +124,19 @@ img {
     width: 85px;
     background-color: white;
     margin: 10px 10px;
-    border-radius: 18%;
+    border-radius: 50%;
     border: 3px solid;
     transition: all 0.5s;
 }
 
 .icon-btn {
     font-size: xx-large;
+}
+
+.misc-btn {
+    background-color: white;
+    border: none;
+    font-size: x-large;
 }
 
 .fa-hand-back-fist {
