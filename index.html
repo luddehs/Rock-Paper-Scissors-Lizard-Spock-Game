@@ -19,10 +19,9 @@
     </h1>
     
     <div class="rules">
-        <!-- Add instructions and toggle function -->
         <h2>
             <button type="button" id="toggle-rules">
-                <i class="fa-solid fa-circle-plus" title="Click to open/close"></i></i> 
+                <i class="fa-solid fa-circle-plus" title="Click to open/close"></i>
             </button>
             How to play
         </h2>
@@ -45,7 +44,6 @@
     <section class="game-area">
         <div>
             <h2>Make a choice!</h2>
-            <!-- Add buttons -->
             <div class="controls-area">
                 <button aria-label="rock" data-choice="0" class="btn rock-btn">
                     <i class="icon-btn fa-solid fa-hand-back-fist"></i>
@@ -62,7 +60,6 @@
                 <button aria-label="spock" data-choice="4" class="btn spock-btn">
                     <i class="icon-btn fa-solid fa-hand-spock"></i>
                 </button>
-                
             </div>
         </div>
     </section>
@@ -87,10 +84,13 @@
             <h2 class="scores">Your score: <span id="player-score">0</span></h2> 
             <h2 class="scores">Computer score: <span id="computer-score">0</span></h2>
         </div>
-        <div class="reset">
-            <!-- Add reset function -->
-            <i class="icon-btn fa-solid fa-bomb"></i>
-        </div>
+
+        <h2>
+            <button type="button" id="reset-game">
+            <i class="icon-btn fa-solid fa-bomb" title="Click to reset game"></i>
+            </button>
+            Reset game
+        </h2>
     </div>
 
     <script src="assets/js/script.js" defer></script>
