@@ -92,8 +92,9 @@ function updateScores(result) {
       winnerLoser.textContent = 'Player wins/Computer lose';
 
     } else if (result === 'computer') {
-      winnerLoser.textContent = 'Player lose/Computer wins';
       incrementComputerScore();
+      winnerLoser.textContent = 'Player lose/Computer wins';
+      
     } else {
       winnerLoser.textContent = "It's a tie!";
     }
@@ -138,11 +139,14 @@ function incrementPlayerScore() {
 }
 
 function incrementComputerScore() {
-  
+
   let score = parseInt(computerScore.textContent);
   computerScore.textContent = score + 1;
 }
 
 function resetScore() {
-    
+
+  document.getElementById('player-score').innerText = '0';
+  document.getElementById('computer-score').innerText = '0';
+  winnerLoser.textContent = "";
 }
