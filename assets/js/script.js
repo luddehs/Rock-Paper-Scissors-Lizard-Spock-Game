@@ -99,7 +99,7 @@ function updateScores(result) {
     }
   }
  
-
+/* Feature left to implement
 // Return message describing choice relationship and outcome
 function getComputerReaction(choice1, choice2) {
     
@@ -129,7 +129,7 @@ function getComputerReaction(choice1, choice2) {
     return rules[choice1][choice2] || "";
   }
   
-
+*/
 
 function incrementPlayerScore() {
 
