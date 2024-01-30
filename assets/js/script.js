@@ -88,12 +88,12 @@ function checkWinner(playerChoice, computerChoice) {
 function updateScores(result) {
 
     if (result === 'player') {
-
+      incrementPlayerScore();
       winnerLoser.textContent = 'Player wins/Computer lose';
 
     } else if (result === 'computer') {
       winnerLoser.textContent = 'Player lose/Computer wins';
-      
+      incrementComputerScore();
     } else {
       winnerLoser.textContent = "It's a tie!";
     }
@@ -133,10 +133,14 @@ function getComputerReaction(choice1, choice2) {
 
 function incrementPlayerScore() {
 
+  let score = parseInt(playerScore.textContent);
+  playerScore.textContent = score + 1;
 }
 
 function incrementComputerScore() {
-
+  
+  let score = parseInt(computerScore.textContent);
+  computerScore.textContent = score + 1;
 }
 
 function resetScore() {
