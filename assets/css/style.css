@@ -117,28 +117,31 @@ li {
 }
 
 .card-area {
-    box-sizing: border-box;
     width: 100%;
+    background-color: lightblue;
     margin-left: auto;
     margin-right: auto;
     padding: 0.5%
 }
 
 .card {
+    background-color: lightcoral;
+    width: 40%;
+
     display: inline-block;
     transition: all 0.5s;
     padding: 0.5%
 }
 
 #player-card {
-    max-width: 45%;
-    max-height: 45%;
+    max-width: 40%;
+    max-width: 40%;
 }
 
 
 #computer-card {
-    max-width: 45%;
-    max-height: 45%;
+    max-width: 40%;
+    max-width: 40%;
 }
 
 
@@ -170,12 +173,7 @@ span {
 
 /* Media queries */
 
-@media (max-width: 1050px) {
-    .card {
-        width: 45%;
-        height: 45%;
-    }
-}
+
 
 @media (max-width: 600px) {
     .btn {
