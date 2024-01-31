@@ -22,9 +22,8 @@ body {
     width: 90%;
     
 }
-/* Add Logo */
 
-/* Rules */
+/* How to play */
 
 .rules {
     box-sizing: border-box;
@@ -44,14 +43,22 @@ body {
 #rules-list {
     list-style-type: none;
     padding-right: 50px;
+    margin-bottom: 20px;
 }
 
 li {
-    margin: 5px;
+    margin: 1px 2px;
     width: 100%;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: x-large; 
 }
 
-/* Game layout */
+#game-mechanics {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Game Area */
 
 .game-area {
     box-sizing: border-box;
@@ -67,6 +74,39 @@ li {
     width: 100%;
 }
 
+.btn {
+    height: 85px;
+    width: 85px;
+    background-color: white;
+    margin: 10px 10px;
+    border-radius: 50%;
+    border: none;
+    transition: all 0.5s;
+    box-shadow:  9px 9px 18px #e0e0e0,
+             -9px -9px 18px #ffffff;
+    
+}
+
+.icon-btn {
+    font-size: xx-large;
+}
+
+.misc-btn {
+    background-color: white;
+    border: none;
+    font-size: x-large;
+}
+
+.fa-hand-back-fist {
+    transform: rotate(90deg);
+}
+
+.btn:active, .btn:hover {
+    background-color: black;
+    color: white;
+} 
+
+/* Card Area */
 
 .card-area {
     box-sizing: border-box;
@@ -111,42 +151,6 @@ img {
     padding: 10px;
 }
 
-
-/* Buttons */
-
-.btn {
-    height: 85px;
-    width: 85px;
-    background-color: white;
-    margin: 10px 10px;
-    border-radius: 50%;
-    border: none;
-    transition: all 0.5s;
-    box-shadow:  9px 9px 18px #e0e0e0,
-             -9px -9px 18px #ffffff;
-    
-}
-
-.icon-btn {
-    font-size: xx-large;
-}
-
-.misc-btn {
-    background-color: white;
-    border: none;
-    font-size: x-large;
-}
-
-.fa-hand-back-fist {
-    transform: rotate(90deg);
-}
-
-.btn:active, .btn:hover {
-    background-color: black;
-    color: white;
-} 
-
-
 /* Media queries */
 
 @media (max-width: 1040px) {
@@ -174,7 +178,6 @@ img {
         font-size: 80%;
         transition: all 0.5s;
     }
-        
 
 }
 
@@ -188,6 +191,16 @@ img {
 
     .icon-btn {
         font-size: large;
+    }
+
+    li {
+        margin: 1px 2px;
+        font-size: large; 
+    }
+
+    #game-mechanics {
+        max-width: 60%;
+        max-height: 60%;
     }
 
     .scores {
