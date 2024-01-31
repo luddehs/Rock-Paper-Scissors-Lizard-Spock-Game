@@ -16,21 +16,21 @@ body {
 .heading {
     text-align: center;
     font-size: 3rem;
-    padding-top: 10px;
+    padding-top: 8px;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
     
 }
 
-/* How to play */
+/* Rules */
 
 .rules {
     box-sizing: border-box;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0.5%
+
 }
 
 .rules-toggle {
@@ -43,7 +43,7 @@ body {
 
 #rules-list {
     list-style-type: none;
-    padding-right: 50px;
+    padding-right: 46px;
     margin-bottom: 20px;
 }
 
@@ -66,7 +66,6 @@ li {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0.5%
 }
 
 .controls-area {
@@ -74,7 +73,6 @@ li {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    padding: 0.5%
 }
 
 .btn {
@@ -113,24 +111,19 @@ li {
 #winner-loser {
     font-family: 'Nanum Pen Script', cursive;
     font-size: xxx-large;
-    padding: 0.5%
+    padding: 8px;
 }
 
 .card-area {
     width: 100%;
-    background-color: lightblue;
     margin-left: auto;
     margin-right: auto;
-    padding: 0.5%
 }
 
 .card {
-    background-color: lightcoral;
     width: 40%;
-
     display: inline-block;
     transition: all 0.5s;
-    padding: 0.5%
 }
 
 #player-card {
@@ -152,16 +145,15 @@ img {
 
 .score-area {
     box-sizing: border-box;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     transition: all 0.5s;
-    padding: 0.5%
 }
 
 .scores {
     display: inline-block;
-    padding: 0 3%;
+    padding: 0 20px;
 }
 
 span {
@@ -171,9 +163,14 @@ span {
     transition: all 0.5s;
 }
 
+#reset-area {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
 /* Media queries */
-
-
 
 @media (max-width: 600px) {
     .btn {

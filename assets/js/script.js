@@ -148,5 +148,5 @@ function resetScore() {
 
   document.getElementById('player-score').innerText = '0';
   document.getElementById('computer-score').innerText = '0';
-  winnerLoser.textContent = "";
+  winnerLoser.textContent = "\u00A0";
 }
