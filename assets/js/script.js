@@ -45,14 +45,14 @@ function toggleRules() {
 function runGame(playerChoice) {
 
     // Change player card to corresponding image 
-    playerCard.src = `assets/images/icons/${choices[playerChoice]}.png`;
+    playerCard.src = `assets/images/icons/player/${choices[playerChoice]}-p.png`;
     playerCard.alt = choices[playerChoice];
 
     // Generate random number for computer choice
     let computerChoice = Math.floor(Math.random() * choices.length);
 
     // Change computer card to corresponding image
-    computerCard.src = `assets/images/icons/${choices[computerChoice]}.png`;
+    computerCard.src = `assets/images/icons/computer/${choices[computerChoice]}-c.png`;
     computerCard.alt = choices[computerChoice];
 
     // Check winner
