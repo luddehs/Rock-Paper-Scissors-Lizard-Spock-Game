@@ -89,11 +89,11 @@ function updateScores(result) {
 
     if (result === 'player') {
       incrementPlayerScore();
-      winnerLoser.textContent = 'Player wins/Computer lose';
+      winnerLoser.textContent = 'You win!';
 
     } else if (result === 'computer') {
       incrementComputerScore();
-      winnerLoser.textContent = 'Player lose/Computer wins';
+      winnerLoser.textContent = 'Computer wins!';
       
     } else {
       winnerLoser.textContent = "It's a tie!";

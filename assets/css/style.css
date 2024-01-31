@@ -69,7 +69,6 @@ li {
 
 
 .card-area {
-    background-color: lightcoral;
     box-sizing: border-box;
     width: 100%;
     margin-left: auto;
@@ -80,20 +79,17 @@ li {
 .card {
     display: inline-block;
     transition: all 0.5s;
-    background-color: lightblue;
 }
 
 #player-card {
     max-width: 45%;
     max-height: 45%;
-    background-color: lightgreen;
 }
 
 
 #computer-card {
     max-width: 45%;
     max-height: 45%;
-    background-color: lightyellow;
 }
 
 
@@ -124,8 +120,11 @@ img {
     background-color: white;
     margin: 10px 10px;
     border-radius: 50%;
-    border: 3px solid;
+    border: none;
     transition: all 0.5s;
+    box-shadow:  9px 9px 18px #e0e0e0,
+             -9px -9px 18px #ffffff;
+    
 }
 
 .icon-btn {
@@ -161,25 +160,34 @@ img {
 @media (max-width: 600px) {
     .btn {
         margin: 6px 6px;
-        border: 2px solid;
         width: 50px;
         height: 50px;
+        box-shadow:  4px 4px 9px #e0e0e0,
+             -4px -4px 9px #ffffff;
     }
 
     .icon-btn {
         font-size: x-large;
     }
+
+    .score-area {
+        font-size: 80%;
+        transition: all 0.5s;
+    }
+        
+
 }
 
 @media (max-width: 428px) {
 
-    .winner-loser {
-        padding: 10% 0;
-        width: 100%;
+    .btn {
+        margin: 6px 6px;
+        width: 40px;
+        height:40px;
     }
 
-    .score-area {
-        width: 100%;
+    .icon-btn {
+        font-size: large;
     }
 
     .scores {
