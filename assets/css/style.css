@@ -1,18 +1,15 @@
 /* Global style */
-
 html {
     min-height: 100%;
     position: relative;
 }
 
 body {
-    /* Add colors */
     font-family: "Cabin Sketch", sans-serif ;
     text-align: center;
 }
 
 /* Heading */
-
 .heading {
     text-align: center;
     font-size: 3rem;
@@ -20,17 +17,14 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    
 }
 
-/* Rules */
-
+/* Rules Area */
 .rules {
     box-sizing: border-box;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .rules-toggle {
@@ -60,7 +54,6 @@ li {
 }
 
 /* Game Area */
-
 .game-area {
     box-sizing: border-box;
     width: 100%;
@@ -107,7 +100,6 @@ li {
 }
 
 /* Card Area */
-
 #winner-loser {
     font-family: 'Nanum Pen Script', cursive;
     font-size: xxx-large;
@@ -143,6 +135,7 @@ img {
     height: auto;
 }
 
+/* Score Area */
 .score-area {
     box-sizing: border-box;
     width: 100%;
@@ -167,11 +160,9 @@ span {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 /* Media queries */
-
 @media (max-width: 600px) {
     .btn {
         margin: 6px 6px;
@@ -232,7 +223,6 @@ span {
 }
 
 @media (max-width: 320px) {
-    /* Add button, winner/loser message*/
 
     .controls-area {
         width: 75%;
