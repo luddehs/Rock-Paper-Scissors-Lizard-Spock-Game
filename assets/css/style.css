@@ -180,6 +180,13 @@ span {
     margin-right: auto;
 }
 
+.footer {
+    text-align: center;
+    padding: 5%;
+    font-size: large;
+    transition: all 0.5s;
+}
+
 /* Media queries */
 @media (max-width: 600px) {
     .btn {
@@ -201,7 +208,8 @@ span {
     #winner-loser, #winner-loser-2 {
         font-size: xx-large; 
     }
-
+        
+        
 }
 
 @media (max-width: 428px) {
@@ -237,6 +245,10 @@ span {
 
     .heading {
         font-size: 2rem;
+    }
+
+    .footer {
+        font-size: medium;
     }
 }
 
