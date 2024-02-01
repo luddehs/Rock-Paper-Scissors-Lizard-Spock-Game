@@ -2,7 +2,7 @@
 
 Welcome to my Rock, Paper, Scissors, Lizard, Spock game! A game of chance where you get to test your decicion-making skills and settle disputes against your opponent, the computer. This game is based on the classic Rock, Paper, Scissors game but with two additional elements: Lizard and Spock. A twist that adds a layer of complexity and ensures less ties as an outcome.
 
-## Rules
+### Rules
 - Rock crushes Scissors
 - Scissors cuts Paper
 - Paper covers Rock
@@ -14,10 +14,7 @@ Welcome to my Rock, Paper, Scissors, Lizard, Spock game! A game of chance where 
 - Paper disproves Spock
 - Spock vaporizes Rock
 
-
-
-
-Live Link - [Rock Paper Scissors Lizard Spock Game]()
+The live link can be found here - [Rock Paper Scissors Lizard Spock Game](https://luddehs.github.io/Rock-Paper-Scissors-Lizard-Spock-Game/)
 
 Responsive Image - ![Rock Paper Scissors Lizard Spock Game Am I Responsive Image]()
 
@@ -74,7 +71,6 @@ Table of Contents
 ## User Stories
 
 - ### First Time User
-- The first visit of a user should 
 
 - ### Returning user
 
@@ -87,14 +83,18 @@ Table of Contents
 
 ### Colour Scheme
 
-
 ### Fonts
-Cabin Sketch [Google Fonts](https://fonts.google.com/)
+I use the Cabin Sketch font as the main font throughout the website, giving headlines and titles consistency with playfully bold lettering. 
+Nanum Brush Script is applied as a secondary font to areas where text is frequently updated, making text appear to be written out, and on lists where smaller text-size is required. All fonts were imported via [Google Fonts](https://fonts.google.com/).
+
+Sans Serif is used as a backup if for any reason the main font won't load correctly.
 
 ### Layout
 
 
 ### Wireframes
+
+I used Balsamiq as a tool to create the wireframes.
 
  <details>
 
