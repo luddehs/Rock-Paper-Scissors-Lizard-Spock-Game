@@ -90,11 +90,29 @@ li {
     font-size: x-large;
 }
 
+.btn-square {
+    font-family: inherit;
+    font-size: 1.5em;
+    border-radius: 12px !important;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 10px;
+    transition: all 0.5s;
+    box-shadow: 9px 9px 18px #e0e0e0, -9px -9px 18px #ffffff;
+}
+
 .fa-hand-back-fist {
     transform: rotate(90deg);
 }
 
 .btn:active, .btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-square:active, .btn-square:hover {
     background-color: black;
     color: white;
 }

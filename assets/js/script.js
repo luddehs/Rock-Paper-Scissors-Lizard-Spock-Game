@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }       
     document.getElementById('toggle-rules').addEventListener('click', toggleRules);
+    document.getElementById('reset-score').addEventListener('click', resetScore);
 });
 
 /**
@@ -29,11 +30,13 @@ function toggleRules() {
   let rulesElement = document.getElementById('rules');
   if (showingRules === false) {
     rulesElement.classList.remove('hidden');
-    document.getElementById('toggle-rules').insertAdjacentHTML('beforeend', '<i class="fa-solid fa-circle-minus"></i>');
+    document.getElementById('rules-icon').classList.remove('fa-circle-plus');
+    document.getElementById('rules-icon').classList.add('fa-circle-minus');
     showingRules = true;
   } else {
     rulesElement.classList.add('hidden');
-    document.getElementById('toggle-rules').querySelector('.fa-circle-minus').remove();
+    document.getElementById('rules-icon').classList.add('fa-circle-plus');
+    document.getElementById('rules-icon').classList.remove('fa-circle-minus');
     showingRules = false;
   }
 }
