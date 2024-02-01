@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Font awesome and google fonts -->
+    <!-- Font Awesome and Google Fonts -->
     <script src="https://kit.fontawesome.com/a65304f791.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
+    <!-- Heading -->
     <h1 class="heading">
          ROCK PAPER SCISSORS LIZARD SPOCK GAME
-         <!-- Add logo -->
     </h1>
-    
+    <!-- Rules Area -->
     <div class="rules">
         <h2>
             <button type="button" id="toggle-rules" class="misc-btn">
@@ -40,7 +39,7 @@
             <img id="game-mechanics" src="assets/images/rules-map.png" alt="Image of game mechanics">
         </div>
     </div>
-    
+    <!-- Game Area -->
     <section class="game-area">
         <div>
             <h2>Make a choice!</h2>
@@ -63,7 +62,7 @@
             </div>
         </div>
     </section>
-
+    <!-- Card Area -->
     <div class="card-area">
         <div id="winner-loser">&nbsp</div>
         <div class="card">
@@ -73,23 +72,22 @@
             <img id="computer-card" src="assets/images/icons/computer/rock-c.png" alt="Rock Paper Scissors Lizard Spock">
         </div>
     </div>
-
+    <!-- Score Area -->
     <div class="score-area">
         <div>
             <h2 class="scores">Your score: <span id="player-score">0</span></h2>
-            
             <h2 class="scores">Computer score: <span id="computer-score">0</span></h2>
         </div>
     </div>
+    <!-- Reset Area -->
     <div id="reset-area">
         <h2>
             <button type="button" id="reset-score" onclick="resetScore()" class="misc-btn">
-            <i class="fa-solid fa-bomb" title="Click to reset game"></i>
+                <i class="fa-solid fa-bomb" title="Click to reset game"></i>
             </button>
             Reset game
         </h2>
     </div>
-
     <script src="assets/js/script.js" defer></script>
 </body>
 </html>
