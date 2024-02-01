@@ -31,13 +31,20 @@ document.addEventListener("DOMContentLoaded", function() {
 // Toggle function
 
 function toggleRules() {
-    if (showingRules === false){
-        document.getElementById('rules').classList.remove('hidden');
-        showingRules = true;
-    } else {
-        document.getElementById('rules').classList.add('hidden');
-        showingRules = false;
-    }
+  let rulesElement = document.getElementById('rules');
+  let toggleButton = document.getElementById('toggle-rules');
+
+  if (showingRules === false) {
+    rulesElement.classList.remove('hidden');
+    toggleButton.querySelector('.fa-circle-plus').remove();
+    toggleButton.insertAdjacentHTML('beforeend', '<i class="fa-solid fa-circle-minus"></i>');
+    showingRules = true;
+  } else {
+    rulesElement.classList.add('hidden');
+    toggleButton.querySelector('.fa-circle-minus').remove();
+    toggleButton.insertAdjacentHTML('beforeend', '<i class="fa-solid fa-circle-plus"></i>');
+    showingRules = false;
+  }
 }
 
 // Main function accepts datachoice value of buttons
