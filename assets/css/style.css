@@ -49,8 +49,8 @@ li {
 }
 
 #game-mechanics {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 38%;
+    max-height: 38%;
 }
 
 /* Game Area */
@@ -230,8 +230,8 @@ span {
     }
 
     #game-mechanics {
-        max-width: 60%;
-        max-height: 60%;
+        max-width: 40%;
+        max-height: 40%;
     }
 
     .scores {

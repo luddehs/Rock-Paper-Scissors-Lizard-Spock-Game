@@ -163,9 +163,9 @@ Structured JS plan → single responsibility function
     - No errors were found when passing style.css through the official W3C CSS Validator
         - [W3C CSS Validator Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fluddehs.github.io%2FRock-Paper-Scissors-Lizard-Spock-Game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 - #### Javascript
-    - No errors were returned when passing script.js through the the [JSHint Validator](https://jshint.com/)
+    - One warning and no errors were returned when passing script.js through the the [JSHint Validator](https://jshint.com/) with // jshint esversion: applied.
 
-  ![JSHint Validator Results]()
+  ![JSHint Validator Results](docs/readme_images/jshint.png)
 
 
 ### Accessibility 
