@@ -120,7 +120,7 @@ function updateScores(result, message) {
       winnerLoserMessage.textContent = message;
     } else {
       winnerLoser.textContent = "It's a tie!";
-      innerLoserMessage.textContent = '';
+      winnerLoserMessage.textContent = '';
     }
 }
  

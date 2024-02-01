@@ -16,7 +16,7 @@ Welcome to my Rock, Paper, Scissors, Lizard, Spock game! A game of chance where 
 
 The live link can be found here - [Rock Paper Scissors Lizard Spock Game](https://luddehs.github.io/Rock-Paper-Scissors-Lizard-Spock-Game/)
 
-Responsive Image - ![Rock Paper Scissors Lizard Spock Game Am I Responsive Image]()
+![Rock Paper Scissors Lizard Spock Game Am I Responsive Image](docs/readme_images/am-i-responsive-image.png)
 
 
 Table of Contents
@@ -90,7 +90,15 @@ Nanum Brush Script is applied as a secondary font to areas where text is frequen
 Sans Serif is used as a backup if for any reason the main font won't load correctly.
 
 ### Layout
-
+The site is a single page with 8 sections:
+  - Header
+  - Rules toggle area
+  - Game area
+  - Outcome message
+  - Player/computer choice images
+  - Score area
+  - Reset game
+  - Footer
 
 ### Wireframes
 
@@ -149,10 +157,15 @@ Structured JS plan → single responsibility function
 
 ### Validator Testing
 - #### HTML
-
+    - No errors were returned when passing index.html through the official W3C Markup Validator
+        - [W3C Validator Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fluddehs.github.io%2FRock-Paper-Scissors-Lizard-Spock-Game%2F)
 - #### CSS
-
+    - No errors were found when passing style.css through the official W3C CSS Validator
+        - [W3C CSS Validator Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fluddehs.github.io%2FRock-Paper-Scissors-Lizard-Spock-Game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 - #### Javascript
+    - No errors were returned when passing script.js through the the [JSHint Validator](https://jshint.com/)
+
+  ![JSHint Validator Results]()
 
 
 ### Accessibility 
