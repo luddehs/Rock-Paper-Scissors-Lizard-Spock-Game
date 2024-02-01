@@ -121,25 +121,27 @@ I used Balsamiq as a tool to create the wireframes.
 
 </details>
 
-
-
 ## Features
-Structured JS plan → single responsibility function
 
-
-### Home Page
+### Landing Page
 - Content
 
-### How to play - Toggle
+### Rules & Game Mechanics Toggle Menu
 - Content
 
 ### Game area - Buttons
 - Content
 
-### Card area - winner/loser message
+### winner/loser message
 - Content
 
-### Score Area - Reset score function
+### Card area 
+- Content
+
+### Score Area
+- Content
+
+### Reset score function
 - Content
 
 
@@ -149,8 +151,6 @@ Structured JS plan → single responsibility function
 - Ability to set best of setting
 - History score section
 - Sounds to each button
-
-
 
 
 ## Testing
@@ -200,19 +200,40 @@ Overlapping commits due to ba practice and autosave turned of.. fixed 2024-01-26
 
 
 ### Known Bugs
-
-content moves when clicking minus
-
+There are no known bugs.
 
 ## Technologies Used
 
 ### Languages
-
+- HTML5
+- CSS3
+- JavaScript
 
 ### Frameworks - Libraries - Programs Used
+- [Balsamiq](https://balsamiq.com/)
+- [GitHub](https://github.com/)
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
+- [Google Fonts](https://fonts.google.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [Neumorphism](https://neumorphism.io/)
+- [TinyPNG](https://tinypng.com/)
+- [W3C](https://www.w3.org/)
+- [JSHint](https://jshint.com/)
+- [Am I Responsive](http://ami.responsivedesign.is/)
+- [Responsinator](http://www.responsinator.com/)
 
 
 ## Deployment
+Deployment was made using GitHub pages. To deploy using GitHub pages follow these steps:
+
+1. Navigate to the GitHub.com repository.
+2. Click on 'Settings' at the top of the page.
+3. Choose 'Pages' from the left-side menu bar.
+4. In the 'Source' section, pick the main branch from the 'Branch' dropdown menu.
+5. Once selected, click the 'Save'.
+6. Deployment should be confirmed by a message on a green background saying "Your site is published at" followed by the web address.
+
+The live link can be found here - [Rock Paper Scissors Lizard Spock Game](https://luddehs.github.io/Rock-Paper-Scissors-Lizard-Spock-Game/)
 
 
 ## Cloning
