@@ -1,11 +1,43 @@
-
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 const playerScore = document.getElementById("player-score");
 const computerScore = document.getElementById("computer-score");
 const winnerLoser = document.getElementById("winner-loser");
+const winnerLoserMessage = document.getElementById("winner-loser-2");
 const playerCard = document.getElementById("player-card");
 const computerCard = document.getElementById("computer-card");
 let showingRules = false;
+const rules = {
+  rock: {
+    scissors: "Rock crushes Scissors",
+    lizard: "Rock crushes Lizard",
+    paper: "Paper covers Rock",
+    spock: "Spock vaporizes Rock",
+},
+paper: {
+  rock: "Paper covers Rock",
+  spock: "Paper disproves Spock",
+  scissors: "Scissors cuts Paper",
+  lizard: "Lizard eats Paper",
+},
+scissors: {
+  paper: "Scissors cuts Paper",
+  lizard: "Scissors decapitates Lizard",
+  rock: "Rock crushes Scissors",
+  spock: "Spock smashes Scissors",
+},
+lizard: {
+  spock: "Lizard poisons Spock",
+  paper: "Lizard eats Paper",
+  rock: "Rock crushes Lizard",
+  scissors: "Scissors decapitates Lizard",
+},
+spock: {
+  scissors: "Spock smashes Scissors",
+  rock: "Spock vaporizes Rock",
+  paper: "Paper disproves Spock",
+  lizard: "Lizard poisons Spock",
+},
+};
 
 /**
  * Event listener loading the DOM before running the game.
@@ -51,8 +83,9 @@ function runGame(playerChoice) {
     let computerChoice = Math.floor(Math.random() * choices.length);
     computerCard.src = `assets/images/icons/computer/${choices[computerChoice]}-c.png`;
     computerCard.alt = choices[computerChoice];
-    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
-    updateScores(result);
+    let result = checkWinner(choices[playerChoice], choices[computerChoice] );
+    const message = rules[choices[computerChoice]][choices[playerChoice]];
+    updateScores(result, message);
 } 
 
 // Compare choices and determine the winner
@@ -71,51 +104,26 @@ function checkWinner(playerChoice, computerChoice) {
     } else {
       return 'computer';
     }
-  }
+}
 
 /**
  * Determines the outcome of each turn and returns message based in result.
  */
-function updateScores(result) {
+function updateScores(result, message) {
     if (result === 'player') {
       incrementPlayerScore();
-      winnerLoser.textContent = 'You win!';
+      winnerLoser.textContent = `You win!`;
+      winnerLoserMessage.textContent = message;
     } else if (result === 'computer') {
       incrementComputerScore();
-      winnerLoser.textContent = 'Computer wins!';
+      winnerLoser.textContent = `Computer wins!`;
+      winnerLoserMessage.textContent = message;
     } else {
       winnerLoser.textContent = "It's a tie!";
+      innerLoserMessage.textContent = '';
     }
-  }
+}
  
-/* Feature left to implement -> Return message describing choice relationship and outcome.
-function getComputerReaction(choice1, choice2) {
-    
-    const rules = {
-        rock: {
-        scissors: "Rock crushes Scissors",
-        lizard: "Rock crushes Lizard",
-      },
-      paper: {
-        rock: "Paper covers Rock",
-        spock: "Paper disproves Spock",
-      },
-      scissors: {
-        paper: "Scissors cuts Paper",
-        lizard: "Scissors decapitates Lizard",
-      },
-      lizard: {
-        spock: "Lizard poisons Spock",
-        paper: "Lizard eats Paper",
-      },
-      spock: {
-        scissors: "Spock smashes Scissors",
-        rock: "Spock vaporizes Rock",
-      },
-    };
-    return rules[choice1][choice2] || "";
-} */
-
 
 /**
  * Increments score by 1 if player wins.
@@ -140,4 +148,5 @@ function resetScore() {
   document.getElementById('player-score').innerText = '0';
   document.getElementById('computer-score').innerText = '0';
   winnerLoser.textContent = "\u00A0";
+  winnerLoserMessage.textContent = "\u00A0";
 }

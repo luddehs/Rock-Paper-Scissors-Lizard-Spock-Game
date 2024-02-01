@@ -118,7 +118,7 @@ li {
 }
 
 /* Card Area */
-#winner-loser {
+#winner-loser, #winner-loser-2 {
     font-family: 'Nanum Brush Script', cursive;
     font-size: xxx-large;
     padding: 8px;
@@ -198,7 +198,7 @@ span {
         font-size: 90%;
     }
 
-    #winner-loser {
+    #winner-loser, #winner-loser-2 {
         font-size: xx-large; 
     }
 
