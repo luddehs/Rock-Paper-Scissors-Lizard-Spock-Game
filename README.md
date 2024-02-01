@@ -74,6 +74,7 @@ Table of Contents
 ## User Stories
 
 - ### First Time User
+- The first visit of a user should 
 
 - ### Returning user
 
@@ -115,6 +116,8 @@ Cabin Sketch [Google Fonts](https://fonts.google.com/)
 
 
 ## Features
+Structured JS plan → single responsibility function
+
 
 ### Home Page
 - Content
@@ -172,8 +175,20 @@ Cabin Sketch [Google Fonts](https://fonts.google.com/)
 
 ### Fixed Bugs
 
+→ "Fix bug, redefine computerChoice declaration and image src error.”
+
+→ “Fixed so that how to play button wont affect the game”
+
+→ "Add increment score function and fix bug in html.”
+
+→ Old Commits  → **Fix score area alignment**
+
+Overlapping commits due to ba practice and autosave turned of.. fixed 2024-01-26
+
 
 ### Known Bugs
+
+content moves when clicking minus
 
 
 ## Technologies Used
@@ -191,7 +206,14 @@ Cabin Sketch [Google Fonts](https://fonts.google.com/)
 
 
 ## Credits
+https://www.shecodes.io/athena/36142-how-to-align-text-with-different-sizes-in-css
 
+https://neumorphism.io/
+
+https://github.com/AliOKeeffe/The-Animal-Association-Game/blob/main/README.md
+
+https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock
+https://stackoverflow.com/
 
 ### Content
 
